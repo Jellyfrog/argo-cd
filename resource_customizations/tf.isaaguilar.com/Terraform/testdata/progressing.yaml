@@ -1,0 +1,392 @@
+apiVersion: tf.isaaguilar.com/v1alpha1
+kind: Terraform
+metadata:
+  generation: 38
+  name: test
+spec:
+  env:
+    - name: TF_VAR_name
+      value: es
+status:
+  exported: 'false'
+  lastCompletedGeneration: 0
+  phase: running
+  stages:
+    - generation: 1
+      interruptible: false
+      podType: setup
+      reason: TF_RESOURCE_CREATED
+      startTime: '2022-10-04T14:44:40Z'
+      state: complete
+      stopTime: '2022-10-05T08:20:06Z'
+    - generation: 1
+      interruptible: true
+      podType: init
+      reason: ''
+      startTime: '2022-10-05T08:20:06Z'
+      state: complete
+      stopTime: '2022-10-05T08:20:24Z'
+    - generation: 1
+      interruptible: false
+      podType: plan
+      reason: ''
+      startTime: '2022-10-05T08:20:24Z'
+      state: complete
+      stopTime: '2022-10-05T08:20:43Z'
+    - generation: 1
+      interruptible: false
+      podType: apply
+      reason: ''
+      startTime: '2022-10-05T08:20:43Z'
+      state: failed
+      stopTime: '2022-10-05T08:29:40Z'
+    - generation: 2
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T08:30:31Z'
+      state: complete
+      stopTime: '2022-10-05T08:30:42Z'
+    - generation: 2
+      interruptible: true
+      podType: init
+      reason: ''
+      startTime: '2022-10-05T08:30:42Z'
+      state: complete
+      stopTime: '2022-10-05T08:30:52Z'
+    - generation: 2
+      interruptible: false
+      podType: plan
+      reason: ''
+      startTime: '2022-10-05T08:30:52Z'
+      state: complete
+      stopTime: '2022-10-05T08:31:02Z'
+    - generation: 2
+      interruptible: false
+      podType: apply
+      reason: ''
+      startTime: '2022-10-05T08:31:02Z'
+      state: complete
+      stopTime: '2022-10-05T08:31:18Z'
+    - generation: 2
+      interruptible: true
+      podType: ''
+      reason: COMPLETED_TERRAFORM
+      startTime: '2022-10-05T08:31:18Z'
+      state: complete
+      stopTime: '2022-10-05T08:31:18Z'
+    - generation: 3
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T08:33:13Z'
+      state: complete
+      stopTime: '2022-10-05T08:33:26Z'
+    - generation: 3
+      interruptible: true
+      podType: init
+      reason: ''
+      startTime: '2022-10-05T08:33:26Z'
+      state: complete
+      stopTime: '2022-10-05T08:33:41Z'
+    - generation: 3
+      interruptible: false
+      podType: plan
+      reason: ''
+      startTime: '2022-10-05T08:33:41Z'
+      state: complete
+      stopTime: '2022-10-05T08:33:51Z'
+    - generation: 3
+      interruptible: false
+      podType: apply
+      reason: ''
+      startTime: '2022-10-05T08:33:51Z'
+      state: complete
+      stopTime: '2022-10-05T08:33:56Z'
+    - generation: 3
+      interruptible: true
+      podType: ''
+      reason: COMPLETED_TERRAFORM
+      startTime: '2022-10-05T08:33:56Z'
+      state: complete
+      stopTime: '2022-10-05T08:33:56Z'
+    - generation: 4
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T08:38:40Z'
+      state: failed
+      stopTime: '2022-10-05T08:38:57Z'
+    - generation: 5
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T08:49:26Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 6
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T08:49:31Z'
+      state: failed
+      stopTime: '2022-10-05T08:51:31Z'
+    - generation: 7
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T08:53:29Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 8
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T08:53:30Z'
+      state: failed
+      stopTime: '2022-10-05T08:53:40Z'
+    - generation: 9
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T08:58:37Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 10
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T08:58:37Z'
+      state: failed
+      stopTime: '2022-10-05T08:58:48Z'
+    - generation: 11
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:02:39Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 12
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:02:39Z'
+      state: failed
+      stopTime: '2022-10-05T09:02:53Z'
+    - generation: 13
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:07:09Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 14
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:07:12Z'
+      state: failed
+      stopTime: '2022-10-05T09:07:17Z'
+    - generation: 15
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:11:30Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 16
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:11:31Z'
+      state: failed
+      stopTime: '2022-10-05T09:12:44Z'
+    - generation: 17
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:16:32Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 18
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:16:32Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 19
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:16:37Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 20
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:16:42Z'
+      state: failed
+      stopTime: '2022-10-05T09:18:52Z'
+    - generation: 21
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:25:34Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 22
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:25:35Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 23
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:25:41Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 24
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:25:45Z'
+      state: failed
+      stopTime: '2022-10-05T09:28:56Z'
+    - generation: 25
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:28:58Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 26
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:28:59Z'
+      state: failed
+      stopTime: '2022-10-05T09:36:14Z'
+    - generation: 27
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:40:20Z'
+      state: complete
+      stopTime: '2022-10-05T09:40:33Z'
+    - generation: 27
+      interruptible: true
+      podType: init
+      reason: ''
+      startTime: '2022-10-05T09:40:33Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 28
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:40:33Z'
+      state: failed
+      stopTime: '2022-10-05T09:40:44Z'
+    - generation: 29
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:44:29Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 30
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T09:44:30Z'
+      state: failed
+      stopTime: '2022-10-05T09:45:13Z'
+    - generation: 31
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T10:31:20Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 32
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T10:31:24Z'
+      state: failed
+      stopTime: '2022-10-05T11:24:10Z'
+    - generation: 33
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T12:16:26Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 34
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T12:16:29Z'
+      state: failed
+      stopTime: '2022-10-05T12:16:43Z'
+    - generation: 35
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T12:40:22Z'
+      state: in-progress
+      stopTime: '1970-01-01T00:00:00Z'
+    - generation: 36
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T12:40:29Z'
+      state: failed
+      stopTime: '2022-10-05T12:41:01Z'
+    - generation: 37
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-05T12:55:32Z'
+      state: complete
+      stopTime: '2022-10-05T12:55:41Z'
+    - generation: 37
+      interruptible: true
+      podType: init
+      reason: ''
+      startTime: '2022-10-05T12:55:41Z'
+      state: complete
+      stopTime: '2022-10-05T12:55:54Z'
+    - generation: 37
+      interruptible: false
+      podType: plan
+      reason: ''
+      startTime: '2022-10-05T12:55:54Z'
+      state: complete
+      stopTime: '2022-10-05T12:56:03Z'
+    - generation: 37
+      interruptible: false
+      podType: apply
+      reason: ''
+      startTime: '2022-10-05T12:56:03Z'
+      state: complete
+      stopTime: '2022-10-05T12:56:13Z'
+    - generation: 37
+      interruptible: true
+      podType: ''
+      reason: COMPLETED_TERRAFORM
+      startTime: '2022-10-05T12:56:13Z'
+      state: complete
+      stopTime: '2022-10-05T12:56:13Z'
+    - generation: 38
+      interruptible: true
+      podType: setup
+      reason: GENERATION_CHANGE
+      startTime: '2022-10-06T15:46:16Z'
+      state: failed
+      stopTime: '2022-10-07T15:13:37Z'

@@ -1,0 +1,49 @@
+apiVersion: tf.isaaguilar.com/v1alpha1
+kind: Terraform
+metadata:
+  generation: 2
+  name: test
+  namespace: tfo-dns
+spec:
+  credentials:
+    - aws: {}
+status:
+  exported: 'false'
+  lastCompletedGeneration: 0
+  phase: completed
+  stages:
+    - generation: 2
+      interruptible: false
+      podType: setup
+      reason: TF_RESOURCE_CREATED
+      startTime: '2022-10-07T10:07:44Z'
+      state: complete
+      stopTime: '2022-10-07T10:08:00Z'
+    - generation: 2
+      interruptible: true
+      podType: init
+      reason: ''
+      startTime: '2022-10-07T10:08:00Z'
+      state: complete
+      stopTime: '2022-10-07T10:08:11Z'
+    - generation: 2
+      interruptible: false
+      podType: plan
+      reason: ''
+      startTime: '2022-10-07T10:08:11Z'
+      state: complete
+      stopTime: '2022-10-07T10:08:25Z'
+    - generation: 2
+      interruptible: false
+      podType: apply
+      reason: ''
+      startTime: '2022-10-07T10:08:25Z'
+      state: complete
+      stopTime: '2022-10-07T10:08:43Z'
+    - generation: 2
+      interruptible: true
+      podType: ''
+      reason: COMPLETED_TERRAFORM
+      startTime: '2022-10-07T10:08:43Z'
+      state: complete
+      stopTime: '2022-10-07T10:08:43Z'
